@@ -85,4 +85,4 @@ Results confirm stable functionality and performance across all test conditions.
 
 ---
 
-📁 For full details and schematics, refer to the `DOCUMENTATIE.docx` file.
+
