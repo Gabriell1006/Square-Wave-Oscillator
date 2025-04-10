@@ -1,0 +1,14 @@
+n=22
+ampl - 0-N/5 (0-4.4)V
+frecv- 1N-3N (22-66)khz
+
+	Pamplit - 500k
+
+amplit ~0 		set = 1 (sau cat mai aproape de 1)
+amplit ~22/5 = 4.4V	set = 0.14
+
+
+	Pfrecv - 10k
+
+f ~ 22	(45.45 jos)	set = 0.021
+f ~ 66	(15.15 jos)	set = 0.0074

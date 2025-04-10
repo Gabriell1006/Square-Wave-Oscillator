@@ -1,0 +1,4 @@
+ lib=E:\P1_2024_433E_Popescu_Vlad_Gabriel_GSD_22_Simulator\Schematics\lib_modelepspice_anexa_1\modele_a1_lib\bc817-25.lib, offset=481, size=704
+ lib=E:\P1_2024_433E_Popescu_Vlad_Gabriel_GSD_22_Simulator\Schematics\lib_modelepspice_anexa_1\modele_a1_lib\bc807-25.lib, offset=480, size=667
+ lib=E:\P1_2024_433E_Popescu_Vlad_Gabriel_GSD_22_Simulator\Schematics\lib_modelepspice_anexa_1\modele_a1_lib\1n4148.lib, offset=400, size=375
+ lib=C:\Cadence\SPB_17.2\tools\PSpice\Library\breakout.lib, offset=9201, size=133

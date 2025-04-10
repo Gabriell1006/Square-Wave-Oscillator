@@ -1,0 +1,80 @@
+
+**** 11/13/24 13:37:58 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-dswaf"  [ C:\Users\Costin\Desktop\PROIECTE\part 1\1.mon\N22 osc_dr\Schematics\sch_sim-pspicefiles\schematic1
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "dswaf.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../lib_modelepspice_anexa_1/modele_a1_lib/bc856b.lib" 
+.LIB "../../../lib_modelepspice_anexa_1/modele_a1_lib/bc846b.lib" 
+.LIB "../../../lib_modelepspice_anexa_1/modele_a1_lib/bc817-25.lib" 
+.LIB "../../../lib_modelepspice_anexa_1/modele_a1_lib/bc807-25.lib" 
+.LIB "../../../lib_modelepspice_anexa_1/modele_a1_lib/1n4148.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Costin\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 5m 0 10 u SKIPBP 
+-----------------$
+ERROR(ORPSIM-16107): Undefined parameter
+.TEMP 0 25 70
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source SCH_SIM
+R_R16         VEE N179610  100k  
+R_R11         N178824 VCC  150  
+R_R7         N179014 N179108  22k  
+Q_Q4         N179370 N179108 N178830 QBC856B 
+R_RL1         N179478 N204351  10k  
+R_R24         N178836 VCC  100k  
+R_R34         0 N179014  10k  
+Q_Q5         N178824 N179370 VEE QBC846B 
+C_C4         N178824 N179610  10n  TC=0,0 
+Q_Q8         VCC N178836 N178956 QBC846B 
+C_C5         N179370 N178824  10p  TC=0,0 
+R_R20         N178824 N178980  22k  
+R_R9         VEE N179370  3.3k  
+Q_Q9         VEE N179610 N178956 QBC856B 
+R_RL2         N179538 N179478  10k  
+R_R33         N179108 N178980  10k  
+R_R8         VEE N179366  3.3k  
+Q_Q3         N179366 N185972 N178830 QBC856B 
+R_R1         N178830 VCC  8.2k  
+R_RL3         0 N179538  2k  
+X_U6         N182520 VEE 1N4148 
+V_V1         VCC 0 10
+R_R12         0 N182362  1k TC=0,0 
+X_U5         VCC N182362 1N4148 
+R_R13         0 N182362  1k TC=0,0 
+R_R15         N182520 0  1k TC=0,0 
+V_V2         0 VEE 10
+R_R14         N182520 0  1k TC=0,0 
+X_U1         N178836 N185645 1N4148 
+X_U2         N185645 N179610 1N4148 
+R_R5         N178824 N185912  1k  
+C_C6         0 N185972  4.7n  TC=0,0 
+X_Pfrecv         N185912 N185912 N185972 POT PARAMS: SET=0.3 VALUE=10k
+C_C3         0 N185972  470p  TC=0,0 
+X_Pamplit         N178956 N178956 N204351 POT PARAMS: SET=0.726 VALUE=500k
+
+**** RESUMING dswaf.cir ****
+.END
+
